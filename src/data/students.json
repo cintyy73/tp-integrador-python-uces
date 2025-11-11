@@ -1,0 +1,204 @@
+[
+    {
+        "id": 1,
+        "name": "Maria",
+        "surname": "Gonzalez",
+        "email": "maria.gonzalez@example.com",
+        "phone": "+54-11-5555-0101",
+        "age": 21,
+        "password": "Gonzalez123",
+        "course_id": [
+            1
+        ],
+        "cases": [
+            {
+                "id": "CASO-1001",
+                "reason": "Problema con el acceso al campus",
+                "description": "No puedo acceder a los materiales del curso",
+                "response": "",
+                "status": "pending",
+                "created_at": "2025-10-24"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Juan",
+        "surname": "Perez",
+        "email": "juan.perez@example.com",
+        "phone": "+54-11-5555-0102",
+        "age": 23,
+        "password": "Perez123",
+        "course_id": [
+            2
+        ],
+        "cases": [
+            {
+                "id": "CASO-1002",
+                "reason": "Consulta sobre evaluación",
+                "description": "Necesito saber la fecha del próximo parcial",
+                "response": "El parcial será el 15 de noviembre",
+                "status": "resolved",
+                "created_at": "2025-10-20"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Lucia",
+        "surname": "Martinez",
+        "email": "lucia.martinez@example.com",
+        "phone": "+54-11-5555-0103",
+        "age": 20,
+        "password": "Martinez123",
+        "course_id": [
+            3
+        ],
+        "cases": []
+    },
+    {
+        "id": 4,
+        "name": "Diego",
+        "surname": "Ramirez",
+        "email": "diego.ramirez@example.com",
+        "phone": "+54-11-5555-0104",
+        "age": 24,
+        "password": "Ramirez123",
+        "course_id": [
+            1
+        ],
+        "cases": []
+    },
+    {
+        "id": 5,
+        "name": "Sofia",
+        "surname": "Lopez",
+        "email": "sofia.lopez@example.com",
+        "phone": "+54-11-5555-0105",
+        "age": 22,
+        "password": "Lopez123",
+        "course_id": [
+            2
+        ],
+        "cases": []
+    },
+    {
+        "id": 6,
+        "name": "Martin",
+        "surname": "Fernandez",
+        "email": "martin.fernandez@example.com",
+        "phone": "+54-11-5555-0106",
+        "age": 25,
+        "password": "Fernandez123",
+        "course_id": [
+            1
+        ],
+        "cases": []
+    },
+    {
+        "id": 7,
+        "name": "Valentina",
+        "surname": "Gomez",
+        "email": "valentina.gomez@example.com",
+        "phone": "+54-11-5555-0107",
+        "age": 19,
+        "password": "Gomez123",
+        "course_id": [
+            3
+        ],
+        "cases": []
+    },
+    {
+        "id": 8,
+        "name": "Nicolas",
+        "surname": "Sosa",
+        "email": "nicolas.sosa@example.com",
+        "phone": "+54-11-5555-0108",
+        "age": 26,
+        "password": "Sosa123",
+        "course_id": [
+            2
+        ],
+        "cases": []
+    },
+    {
+        "id": 9,
+        "name": "Camila",
+        "surname": "Ruiz",
+        "email": "camila.ruiz@example.com",
+        "phone": "+54-11-5555-0109",
+        "age": 20,
+        "password": "Ruiz123",
+        "course_id": [
+            4
+        ],
+        "cases": []
+    },
+    {
+        "id": 10,
+        "name": "Tomas",
+        "surname": "Alvarez",
+        "email": "tomas.alvarez@example.com",
+        "phone": "+54-11-5555-0110",
+        "age": 27,
+        "password": "Alvarez123",
+        "course_id": [
+            42
+        ],
+        "cases": []
+    },
+    {
+        "id": 11,
+        "name": "cin",
+        "surname": "poaez",
+        "email": "cin@test.som",
+        "phone": "",
+        "age": null,
+        "password": "Test1234",
+        "course_id": [
+            42
+        ],
+        "cases": [
+            {
+                "id": "CASO-11-001",
+                "reason": "test crud",
+                "description": "adkfhadghsakfnpsdfneef",
+                "response": "",
+                "status": "pending",
+                "created_at": "2025-11-11"
+            },
+            {
+                "id": "CASO-11-002",
+                "reason": "test  dfds crud",
+                "description": "adkfhadghsdfsakfnpsdfneef",
+                "response": "",
+                "status": "pending",
+                "created_at": "2025-11-11"
+            },
+            {
+                "id": "CASO-11-003",
+                "reason": "asdfasd",
+                "description": "asdfasdf",
+                "response": "",
+                "status": "pending",
+                "created_at": "2025-11-11"
+            },
+            {
+                "id": "CASO-11-004",
+                "reason": "asdfasd",
+                "description": "asdfadgfhsdsdf",
+                "response": "",
+                "status": "pending",
+                "created_at": "2025-11-11"
+            },
+            {
+                "id": "CASO-11-005",
+                "reason": "adfasdf",
+                "description": "asdgfas",
+                "response": "",
+                "status": "pending",
+                "created_at": "2025-11-11"
+            }
+        ]
+    }
+]
