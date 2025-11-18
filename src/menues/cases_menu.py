@@ -1,6 +1,6 @@
 from datetime import datetime
 from data.students import save_students, students
-from utils.functions import pause
+from utils.functions import pause, print_separator, print_success
 
 
 
@@ -58,11 +58,11 @@ def show_cases(student_data, course_id):
     # Iterar sobre cada diccionario en la lista sorted_cases
     for case in sorted_cases:
         # case es un diccionario, accedemos a sus claves con []
-        print(f"\nID: {case['id']}")
+        print(f"ID: {case['id']}")
         print(f"Motivo: {case['reason']}")
         print(f"Estado: {case['status']}")
         print(f"Fecha: {case['created_at']}")
-        print("-" * 50)
+        print_separator()
 
 
 def create_case(student_data, course_id):
@@ -109,10 +109,10 @@ def create_case(student_data, course_id):
     # Guardar los cambios en el archivo JSON
     save_students(students)
     
-    print("\n¡Caso creado exitosamente!")
+    print_success("¡Caso creado exitosamente!")
     print(f"ID del caso: {case_id}")
     print("Estado: pending")
-    print("✓ El caso ha sido guardado permanentemente.")
+    print_success("El caso ha sido guardado permanentemente.")
     input("\nPresione Enter para continuar...")
 
 

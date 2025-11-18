@@ -1,5 +1,5 @@
 from data.students import students, save_students
-from utils.functions import print_header, clear_screen, pause
+from utils.functions import print_header, clear_screen, pause, print_success, print_error
 
 
 def register():
@@ -13,7 +13,7 @@ def register():
 
     # Validar que los campos no estén vacíos
     if not name or not email or not password:
-        print("\nTodos los campos son obligatorios. Registro cancelado.")
+        print_error("Todos los campos son obligatorios. Registro cancelado.")
         pause()
         return False
 
@@ -22,7 +22,7 @@ def register():
     # s["email"] accede a la clave "email" de cada diccionario
     # Retorna True si encuentra alguna coincidencia
     if any(s["email"] == email for s in students):
-        print(f"\nEl email '{email}' ya está registrado en el sistema.")
+        print_error(f"El email '{email}' ya está registrado en el sistema.")
         pause()
         return False
 
@@ -31,7 +31,7 @@ def register():
     # Validar que course_raw contenga solo dígitos (números)
     # .isdigit() retorna True si todos los caracteres son 0-9
     if not course_raw.isdigit():
-        print("\nID de curso inválido. Debe ser un número.")
+        print_error("ID de curso inválido. Debe ser un número.")
         pause()
         return False
     
@@ -69,15 +69,12 @@ def register():
     save_students(students)
     
     # Verificación: mostrar que el estudiante fue agregado
-    print(f"\n[DEBUG] Total de estudiantes ahora: {len(students)}")
-    print(f"[DEBUG] Nuevo estudiante ID: {new_student['id']}")
-    
     clear_screen()
     print_header("Registro Exitoso")
     print(f"\n¡Bienvenido/a, {name}!")
     print(f"Email: {email}")
     print(f"Curso: {course_id}")
     print(f"ID asignado: {new_student['id']}")
-    print("\n✓ Los datos han sido guardados permanentemente.")
+    print_success("Los datos han sido guardados permanentemente.")
     pause()
     return True

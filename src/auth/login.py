@@ -1,8 +1,8 @@
 from data.students import students
 from menues.cases_menu import cases_menu
-from utils.functions import print_header, clear_screen, pause
+from utils.functions import print_header, clear_screen, pause, confirm_action, print_error
 
-
+#TODO  limpiar course_id
 def login():
     clear_screen()
     print_header("Inicio de Sesión")
@@ -16,9 +16,8 @@ def login():
         matched = next((u for u in students if u.get("email") == email), None)
 
         if not matched:
-            print(f"\nEl usuario '{email}' no existe en el sistema.")
-            retry = input("¿Desea intentar nuevamente? (s/n): ").lower().strip()
-            if retry != "s":
+            print_error(f"El usuario '{email}' no existe en el sistema.")
+            if not confirm_action("¿Desea intentar nuevamente? (s/n): "):
                 print("\nLogin cancelado. Volviendo al menú principal...")
                 pause()
                 return False  # Vuelve al menú principal
@@ -60,16 +59,14 @@ def login():
             course_raw = input("\nID del curso (obligatorio): ").strip()
 
             if not course_raw:
-                print("\nDebe ingresar un IDD de curso para continuar.")
-                retry = input("¿Desea intentar nuevamente? (s/n): ").lower().strip()
-                if retry != "s":
+                print_error("Debe ingresar un ID de curso para continuar.")
+                if not confirm_action("¿Desea intentar nuevamente? (s/n): "):
                     return False
                 continue
 
             if not course_raw.isdigit():
-                print("\nID de curso inválido. Debe ser un número.")
-                retry = input("¿Desea intentar nuevamente? (s/n): ").lower().strip()
-                if retry != "s":
+                print_error("ID de curso inválido. Debe ser un número.")
+                if not confirm_action("¿Desea intentar nuevamente? (s/n): "):
                     return False
                 continue
 
@@ -79,10 +76,9 @@ def login():
             # Si no existe la clave, retorna [] (lista vacía) como valor por defecto
             # course_id not in [...] verifica si el id NO está en la lista
             if course_id not in matched.get("course_id", []):
-                print(f"\nEl usuario no está registrado en el curso {course_id}.")
+                print_error(f"El usuario no está registrado en el curso {course_id}.")
                 print(f"Cursos disponibles: {matched.get('course_id', [])}")
-                retry = input("¿Desea intentar nuevamente? (s/n): ").lower().strip()
-                if retry != "s":
+                if not confirm_action("¿Desea intentar nuevamente? (s/n): "):
                     return False
                 continue
 
