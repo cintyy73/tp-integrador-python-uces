@@ -2,7 +2,7 @@ from auth.login import login
 from auth.register import register
 import os
 import sys
-from utils.functions import print_header, clear_screen
+from utils.functions import print_header, clear_screen, pause
 
 # Agregar el directorio raíz al path si se ejecuta directamente (consultar aRolando)
 if __name__ == "__main__":
@@ -45,3 +45,5 @@ def main_menu():
                 return False
             case _:
                 print("\nOpción no válida. Por favor, intente nuevamente.")
+                pause()
+#TODO agregar rol docente para gestionar casos 
