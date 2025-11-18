@@ -45,6 +45,7 @@ def show_cases(student_data, course_id):
         print("\nNo tienes casos registrados.")
         return
     #TODO ver de agregar opciones de ordenar en asc y desc REVISAR SORT!
+    
     # Ordenar lista de diccionarios usando sorted()
     # key=lambda x: x['created_at'] indica que ordene por la fecha
     # lambda es una función anónima que recibe x (cada caso) y retorna x['created_at']
@@ -115,7 +116,7 @@ def create_case(student_data, course_id):
     print_success("El caso ha sido guardado permanentemente.")
     input("\nPresione Enter para continuar...")
 
-
+#TODO renombrar carpeta menues -> menu cambiar imports
 def view_case_detail(student_data):
     """Muestra el detalle completo de un caso específico."""
     # Obtener la lista de casos del diccionario student_data
@@ -156,3 +157,5 @@ def view_case_detail(student_data):
         print("\nEste caso aún no tiene respuesta.")
     
     print(f"{'='*50}")
+
+#TODO reemplazar los  print(f"{'='*50}") por print_separator()

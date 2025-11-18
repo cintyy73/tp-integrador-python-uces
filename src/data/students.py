@@ -10,6 +10,7 @@ Estructuras de datos:
 - Lista de diccionarios, donde cada diccionario representa un estudiante
 - Cada estudiante tiene: id, name, surname, email, password, course_id, cases
 """
+# TODO eliminar datos innecsarios email phone age password
 
 import json
 import os
