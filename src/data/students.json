@@ -149,9 +149,9 @@
     },
     {
         "id": 11,
-        "name": "cin",
-        "surname": "poaez",
-        "email": "cin@test.som",
+        "name": "Cintia",
+        "surname": "Paez",
+        "email": "cin@test.com",
         "phone": "",
         "age": null,
         "password": "Test1234",
@@ -195,10 +195,55 @@
                 "id": "CASO-11-005",
                 "reason": "adfasdf",
                 "description": "asdgfas",
+                "response": "asfdgasg",
+                "status": "closed",
+                "created_at": "2025-11-11"
+            },
+            {
+                "id": "CASO-11-006",
+                "reason": "sadfg",
+                "description": "sadf",
                 "response": "",
                 "status": "pending",
                 "created_at": "2025-11-11"
+            },
+            {
+                "id": "CASO-11-006",
+                "reason": "sadfg",
+                "description": "sadf",
+                "response": "",
+                "status": "pending",
+                "created_at": "2025-11-11"
+            },
+            {
+                "id": "CASO-11-008",
+                "reason": "test ",
+                "description": "testeando create",
+                "response": "",
+                "status": "pending",
+                "created_at": "2025-11-18"
+            },
+            {
+                "id": "CASO-11-008",
+                "reason": "test ",
+                "description": "testeando create",
+                "response": "",
+                "status": "pending",
+                "created_at": "2025-11-18"
             }
         ]
+    },
+    {
+        "id": 12,
+        "name": "pepe",
+        "surname": "test",
+        "email": "pepe@test.com",
+        "phone": "",
+        "age": null,
+        "password": "pepTest",
+        "course_id": [
+            42
+        ],
+        "cases": []
     }
 ]
