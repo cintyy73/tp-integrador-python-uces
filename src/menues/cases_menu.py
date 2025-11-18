@@ -122,7 +122,7 @@ def view_case_detail(student_data):
     student_cases = student_data.get("cases", [])
     
     if not student_cases:
-        print(f"\nNo tienes casos registrados.")
+        print("\nNo tienes casos registrados.")
         return
     
     case_id = input("\nIngrese el ID del caso: ")
@@ -144,15 +144,15 @@ def view_case_detail(student_data):
     print(f"\nMotivo: {case['reason']}")
     print(f"Estado: {case['status']}")
     print(f"Fecha de creación: {case['created_at']}")
-    print(f"\nDescripción:")
+    print("\nDescripción:")
     print(f"{case['description']}")
     
     # .get('response') es más seguro que ['response']
     # Si la clave no existe, retorna None en vez de error
     if case.get('response'):
-        print(f"\n--- Respuesta del Docente ---")
+        print("\n--- Respuesta del Docente ---")
         print(f"{case['response']}")
     else:
-        print(f"\nEste caso aún no tiene respuesta.")
+        print("\nEste caso aún no tiene respuesta.")
     
     print(f"{'='*50}")
