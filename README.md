@@ -81,6 +81,10 @@ python main.py
 - Python 3.10+ (uso de match-case en menús)
 - Módulo datetime para fechas
 
+## 🙏 Agradecimientos
+
+Agradecimiento especial al **Profesor Rolando Gareca** por su guía, enseñanza y apoyo durante el transcurso de esat cursada fundamental para el desarrollo de este trabajo integrador en la materia Programación I de la Tecnicatura en Programación de Sistemas.
+
 ## 👥 Autor
 
 **Cintia Paez** — Trabajo Integrador - UCES
