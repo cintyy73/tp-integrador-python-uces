@@ -32,6 +32,8 @@ def cases_menu(student_data, course_id):
             case _:
                 print("\nOpción no válida. Intente nuevamente.")
 
+#TODO agregar opción de volver al menu anterior o al menu principal o salir en ver casos y detalles de un caso
+
 
 def show_cases(student_data, course_id):
     """Muestra todos los casos del estudiante ordenados por fecha."""
@@ -42,7 +44,7 @@ def show_cases(student_data, course_id):
     if not student_cases:
         print("\nNo tienes casos registrados.")
         return
-    
+    #TODO ver de agregar opciones de ordenar en asc y desc REVISAR SORT!
     # Ordenar lista de diccionarios usando sorted()
     # key=lambda x: x['created_at'] indica que ordene por la fecha
     # lambda es una función anónima que recibe x (cada caso) y retorna x['created_at']
